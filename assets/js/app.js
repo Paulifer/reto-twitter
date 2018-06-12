@@ -20,3 +20,14 @@ if (texts.length == 0 || texts == null) {
  newContenedor.appendChild(contText);
 
 });
+const contar = () => { 
+         const max = "150"; 
+         let cadena = document.getElementById("text").value; 
+         const longitud = cadena.length; 
+
+             if(longitud <= max) { 
+                  document.getElementById("contador").value = max-longitud; 
+             } else { 
+                  document.getElementById("text").value = cadena.substr(0, max);
+             } 
+    } 
